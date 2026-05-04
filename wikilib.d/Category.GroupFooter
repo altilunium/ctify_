@@ -1,0 +1,9 @@
+version=pmwiki-2.3.4 ordered=1 urlencoded=1
+author=Petko
+charset=UTF-8
+csum=You can use category={*$FullName}, see documentation on PageLists (+0) (+77)
+name=Category.GroupFooter
+rev=75
+targets=
+text=(:Summary:Content generated for Category list pages:)%0a----%0a[--'''{*$:Summary}'''--]%0a(:pagelist link={*$FullName} list=normal request=1:)%0a(:comment You can use category={*$FullName}, see documentation on PageLists:)
+time=1652600234

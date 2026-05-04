@@ -1,0 +1,18 @@
+version=pmwiki-2.3.11 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+author=
+charset=ISO-8859-1
+csum=
+ctime=1663080874
+host=::1
+name=Site.DevelopmentBlog
+rev=2
+targets=
+text=Pakai PmWiki, gak perlu MySQL database. Cukup copy aja PHPnya ke htdocs. Kelar deh. Paling tinggal modifikasi kecil-kecilan%0a%0a* [[https://www.pmwiki.org/wiki/Cookbook/CleanUrls|Clean URL]] : Biar URLnya rapih dan mewah%0a* [[https://www.pmwiki.org/wiki/Skins/PmWiki-responsive|Responsive Skin]] : Biar asik dibaca di HP%0a* [[https://altilunium.my.id/w/PmWiki/AuthUser|Auth User]] : Hanya yang punya akun yang bisa edit-edit. Supaya bebas vandal-vandal seram%0a* The most direct method is done from the page itself. Open the page you want to remove, click Edit, then delete all of its content. After that, type the word delete (exactly that, usually on its own line or anywhere in the text), and save the page. PmWiki interprets that as a command to remove the page file entirely rather than just saving it empty.
+time=1775138530
+author:1775138530=
+diff:1775138530:1663080874:=5,6c5%0a%3c * [[https://altilunium.my.id/w/PmWiki/AuthUser|Auth User]] : Hanya yang punya akun yang bisa edit-edit. Supaya bebas vandal-vandal seram%0a%3c * The most direct method is done from the page itself. Open the page you want to remove, click Edit, then delete all of its content. After that, type the word delete (exactly that, usually on its own line or anywhere in the text), and save the page. PmWiki interprets that as a command to remove the page file entirely rather than just saving it empty.%0a\ No newline at end of file%0a---%0a> * [[https://altilunium.my.id/w/PmWiki/AuthUser|Auth User]] : Hanya yang punya akun yang bisa edit-edit. Supaya bebas vandal-vandal seram.%0a\ No newline at end of file%0a
+host:1775138530=::1
+author:1663080874=
+diff:1663080874:1663080874:=1,5d0%0a%3c Pakai PmWiki, gak perlu MySQL database. Cukup copy aja PHPnya ke htdocs. Kelar deh. Paling tinggal modifikasi kecil-kecilan%0a%3c %0a%3c * [[https://www.pmwiki.org/wiki/Cookbook/CleanUrls|Clean URL]] : Biar URLnya rapih dan mewah%0a%3c * [[https://www.pmwiki.org/wiki/Skins/PmWiki-responsive|Responsive Skin]] : Biar asik dibaca di HP%0a%3c * [[https://altilunium.my.id/w/PmWiki/AuthUser|Auth User]] : Hanya yang punya akun yang bisa edit-edit. Supaya bebas vandal-vandal seram.%0a\ No newline at end of file%0a
+host:1663080874=116.206.29.44

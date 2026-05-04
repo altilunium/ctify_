@@ -1,0 +1,26 @@
+version=pmwiki-2.3.11 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+author=
+charset=ISO-8859-1
+csum=
+host=::1
+name=SiteAdmin.AuthUser
+rev=10
+targets=PmWiki.AuthUser,PmWiki.LocalCustomizations,PmWiki.Passwords,PmWiki.SecurityVariables
+text=(:Summary: Configuration of identity based authorisations:)(:nolinkwikiwords:)%0aThis is the default configuration page for PmWiki's identity-based authorizations (aka "authuser.php").  See [[PmWiki.AuthUser]] for instructions.%0a%0a(:if enabled EnableAuthUser:)%0aThis site appears to have the [[PmWiki/AuthUser]] extensions enabled.%0a(:if !enabled EnableAuthUser:)%0aAt present this site doesn't appear to have the [[PmWiki/AuthUser]] extensions enabled.  To enable them, add the line [@include_once("$FarmD/scripts/authuser.php");@] to your ''local/config.php'' file.  (See [[PmWiki.LocalCustomizations]].)%0a(:ifend:)%0a%0a!! Login accounts%0a%0a%0aSpecify login accounts in the form "@@[=username: (:=]encrypt ''password'':)@@" at the beginning of a line:%0a%0a-> # Examples:%0a-> alice: [=(:=]encrypt wonderland:)%0a-> bob: [=(:=]encrypt builder:)%0a%0aNote that the passwords will be encrypted when the page is saved, so that the result will look something like:%0a%0a-> alice: $1$0gcdAN1a$HTdEAXyYYo8Hc9/Xv30Yz1%0a-> bob: $1$wSP2R80i$sJ593ERCmTtjm3Fk26HCV1%0a%0aTo authorize specific login accounts for pages and groups, use "[@id:username@]" as a password in [@?action=attr@] or $DefaultPasswords (see [[PmWiki.Passwords]]).  Use "[@id:*@]" to mean "any logged-in user".%0a%0a!! Authorization groups%0a%0aAuthorization groups are specified with a leading "@" sign.  Define either the login accounts belonging to a group or the groups for a login account:%0a%0a-> @writers: alice, bob  %0a-> carol: @editors, @writers%0a-> @admins: alice, dave%0a%0aThen use "[@@group@]" as a password in [@?action=attr@] or $DefaultPasswords.%0a%0a!! Login accounts from external sources%0a%0aObtaining login accounts from external sources (to enable a source, place it at the beginning of a line):%0a%0a-> htpasswd: /filesystem/path/to/.htpasswd%0a-> ldap: ldap://ldap.example.com/ou=People,o=example?uid?sub%0a%0abob: $2y$10$8sLZPlCGXN81d7i4.eKNfuDmQXc6ivYWyhRjUYaddHhj3XDLUreVe%0a
+time=1777911793
+author:1777911793=
+diff:1777911793:1775811791:=11a12,14%0a> a1: $2y$10$G2aMvCtpy/kCZnoRipAbN.waeLxe6iAImZMycZfrJEhrWKYAgze8.%0a> %0a> @admins:a1%0a
+host:1777911793=::1
+author:1775811791=a1
+diff:1775811791:1775811328:=13d12%0a%3c %0a
+host:1775811791=114.4.215.196
+author:1775811328=
+diff:1775811328:1775811242:=13d12%0a%3c @admins:a1%0a
+host:1775811328=114.4.215.196
+author:1775811242=
+diff:1775811242:1663076204:=11,12d10%0a%3c %0a%3c a1: $2y$10$G2aMvCtpy/kCZnoRipAbN.waeLxe6iAImZMycZfrJEhrWKYAgze8.%0a
+host:1775811242=114.4.215.196
+author:1663076204=
+diff:1663076204:1000000000:=42c42%0a%3c bob: $2y$10$8sLZPlCGXN81d7i4.eKNfuDmQXc6ivYWyhRjUYaddHhj3XDLUreVe%0a---%0a> %0a
+host:1663076204=223.255.229.72

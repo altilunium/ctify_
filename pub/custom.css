@@ -1,0 +1,68 @@
+.pmwiki-folder {
+  margin: 8px 0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.pmwiki-folder-title {
+  background: #2d2d2d;
+  color: #fff;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pmwiki-folder-title:hover {
+  background: #3a3a3a;
+}
+
+.pmwiki-folder-content {
+  padding: 8px;
+  background: #1e1e1e;
+}
+
+.quoteright {
+    float: right;
+    margin: 0 0 10px 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #f9f9f9;
+}
+
+.lazy_load_img_box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.embeddedimage {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.quoteright+*>.acaptionright, .quoteright+.acaptionright {
+    border-radius: 0 0 3px 3px;
+    box-shadow: -1px 0 0 0 #cacdd1, 0 1px 0 0 #cacdd1, 1px 0 0 0 #cacdd1;
+    margin-top: -12px;
+}
+
+.acaptionright, .floatboxright, .quoteright {
+    background: #fafafa;
+    border-left: 6px solid #fafafa;
+    border-radius: 3px;
+    border-right: 6px solid #fafafa;
+    box-shadow: 0 0 0 1px #cacdd1;
+    clear: right;
+    float: right;
+    font-size: 13px;
+    line-height: 1.512em;
+    margin: 1px 1px 5px 13.5px;
+    max-width: 350px;
+    padding: 6px 0;
+    position: relative;
+    text-align: center;
+    width: inherit;
+    z-index: 2;
+}

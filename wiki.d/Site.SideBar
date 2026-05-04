@@ -1,0 +1,48 @@
+version=pmwiki-2.3.11 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+author=
+charset=ISO-8859-1
+csum=
+host=114.8.196.11
+name=Site.SideBar
+passwdedit=@_site_edit
+rev=12
+targets=Main.HomePage,Main.All
+text=* [[Main/HomePage|Home]]%0a* [[Main/All]]%0a(:pagelist link={*$FullName} fmt=title:)%0a%0a
+time=1775746209
+author:1775746209=
+diff:1775746209:1775382051:=2a3%0a> ---%0a
+host:1775746209=114.8.196.11
+author:1775382051=
+diff:1775382051:1775146123:=1a2,3%0a> * [[About]]%0a> * [[Register]]%0a
+host:1775382051=114.8.207.194
+author:1775146123=
+diff:1775146123:1775141081:=5c5,6%0a%3c ---%0a---%0a> %0a> !! Backlinks%0a7a9%0a> {*$FullName}%0a\ No newline at end of file%0a
+host:1775146123=::1
+author:1775141081=
+diff:1775141081:1775141004:=7,9c7,9%0a%3c (:pagelist link={*$FullName} fmt=title:)%0a%3c %0a%3c {*$FullName}%0a\ No newline at end of file%0a---%0a> (:pagelist link={$*FullName} fmt=title:)%0a> %0a> {$*FullName}%0a\ No newline at end of file%0a
+host:1775141081=::1
+author:1775141004=
+diff:1775141004:1775140935:=7,9c7,9%0a%3c (:pagelist link={$*FullName} fmt=title:)%0a%3c %0a%3c {$*FullName}%0a\ No newline at end of file%0a---%0a> (:pagelist link={$FullName} fmt=title:)%0a> %0a> {$FullName}%0a\ No newline at end of file%0a
+host:1775141004=::1
+author:1775140935=
+diff:1775140935:1775140814:=7,9c7%0a%3c (:pagelist link={$FullName} fmt=title:)%0a%3c %0a%3c {$FullName}%0a\ No newline at end of file%0a---%0a> (:pagelist link={$FullName} fmt=title:)%0a\ No newline at end of file%0a
+host:1775140935=::1
+author:1775140814=
+diff:1775140814:1775140806:=4c4%0a%3c * [[Main/All]]%0a---%0a> * [[All]]%0a
+host:1775140814=::1
+author:1775140806=
+diff:1775140806:1775140790:=4d3%0a%3c * [[All]]%0a
+host:1775140806=::1
+author:1775140790=
+diff:1775140790:1663080015:=4,6d3%0a%3c %0a%3c !! Backlinks%0a%3c (:pagelist link={$FullName} fmt=title:)%0a\ No newline at end of file%0a
+host:1775140790=::1
+author:1663080015=
+diff:1663080015:1663077172:=2d1%0a%3c * [[About]]%0a3a3,19%0a> %0a> %25sidehead%25 [[PmWiki/PmWiki]]%0a> * [[PmWiki/Initial Setup Tasks]]  %0a> * [[PmWiki/Basic Editing]]%0a> * [[PmWiki/Documentation Index]]%0a> * [[PmWiki/FAQ | PmWiki FAQ ]]%0a> * [[PmWiki/PmWikiPhilosophy]]%0a> * [[PmWiki/Release Notes]]%0a> * [[PmWiki/ChangeLog]]%0a> %0a> %25sidehead%25 [[http://www.pmwiki.org | pmwiki.org ]]%0a> * [[Cookbook:Cookbook | Cookbook (addons) ]]%0a> * [[Cookbook:Skins | Skins (themes) ]]%0a> * [[PITS:PITS | PITS (issue tracking) ]]%0a> * [[PmWiki/Mailing Lists]]%0a> %0a> %25right%25 [-[[Site.SideBar?action=edit | edit SideBar]]-]%0a\ No newline at end of file%0a
+host:1663080015=116.206.29.44
+author:1663077172=
+diff:1663077172:1663076419:=1c1,2%0a%3c * [[Main/HomePage|Home]]%0a---%0a> * [[Main/HomePage]]%0a> * [[Main/WikiSandbox]]%0a
+host:1663077172=223.255.229.72
+author:1663076419=
+diff:1663076419:1125550800:=3d2%0a%3c * [[Register]]%0a
+host:1663076419=223.255.229.72

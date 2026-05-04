@@ -1,0 +1,27 @@
+version=pmwiki-2.3.11 ordered=1 urlencoded=1
+agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36
+author=
+charset=ISO-8859-1
+csum=
+ctime=1775139239
+host=::1
+name=Main.All
+rev=5
+targets=
+text=(:pagelist group=* list=normal :)%0a(:pagelist group=* fmt="{$FullName} - {$PageSize} bytes":)
+time=1775145217
+author:1775145217=
+diff:1775145217:1775145197:=1,2c1%0a%3c (:pagelist group=* list=normal :)%0a%3c (:pagelist group=* fmt="{$FullName} - {$PageSize} bytes":)%0a\ No newline at end of file%0a---%0a> (:pagelist group=* list=normal :)%0a\ No newline at end of file%0a
+host:1775145217=::1
+author:1775145197=
+diff:1775145197:1775145190:=1c1%0a%3c (:pagelist group=* list=normal :)%0a\ No newline at end of file%0a---%0a> (:pagelist group=* fmt="{$FullName} - {$PageSize} bytes" :)%0a\ No newline at end of file%0a
+host:1775145197=::1
+author:1775145190=
+diff:1775145190:1775145181:=1c1%0a%3c (:pagelist group=* fmt="{$FullName} - {$PageSize} bytes" :)%0a\ No newline at end of file%0a---%0a> (:pagelist group=* fmt="{$FullName} - {$PageSize} bytes" list=normal:)%0a\ No newline at end of file%0a
+host:1775145190=::1
+author:1775145181=
+diff:1775145181:1775139239:=1c1%0a%3c (:pagelist group=* fmt="{$FullName} - {$PageSize} bytes" list=normal:)%0a\ No newline at end of file%0a---%0a> (:pagelist group=* list=normal:)%0a\ No newline at end of file%0a
+host:1775145181=::1
+author:1775139239=
+diff:1775139239:1775139239:=1d0%0a%3c (:pagelist group=* list=normal:)%0a\ No newline at end of file%0a
+host:1775139239=::1
