@@ -25,10 +25,11 @@ A lightweight, PHP-based wiki, forked from PmWiki.
 <img width="1351" height="700" alt="image" src="https://github.com/user-attachments/assets/666a79ab-9c6f-4123-8419-b91b62d8c2d2" />
 
 
-
-
 ### Live demo
 http://cyllchuesnconii.rf.gd/
+
+### Development blog
+* v26.5.5 : [Inline citations](https://rtnf.substack.com/p/ctify_-v2655)
 
 ### Gallery
 <img width="898" height="691" alt="image" src="https://github.com/user-attachments/assets/e939cb77-e600-4c46-a110-87d2328ea39f" />
