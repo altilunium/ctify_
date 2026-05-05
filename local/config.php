@@ -63,3 +63,15 @@ Markup(
     '/\[\[caption-width-right:(\d+):(.*?)\]\]/', // The Regex pattern to match
     '<div class="acaptionright" style="width:$1px;">$2</div>' // The HTML replacement
 );
+
+Markup('ref', 'fulltext',
+  '/\\[\\[ref\\]\\](.*?)\\[\\[\\/ref\\]\\]/is',
+  function($m) {
+    static $refcount = 0;
+    $refcount++;
+
+    //$content = htmlspecialchars($m[1], ENT_QUOTES);
+    $content = $m[1];
+    return "<sup class=\"pm-ref\" data-ref=\"$content\">[$refcount]</sup>";
+  }
+);
