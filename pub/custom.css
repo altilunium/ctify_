@@ -66,3 +66,39 @@
     width: inherit;
     z-index: 2;
 }
+
+.pm-ref {
+  cursor: pointer;
+  position: relative;
+}
+
+#pm-ref-popup {
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: #222;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 0.9em;
+  z-index: 2000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.pm-ref-tooltip {
+  position: fixed;
+  background: #222;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  max-width: 300px;
+  font-size: 0.85em;
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+.pm-ref-tooltip a {
+    color:white;
+    text-decoration: underline;
+}
