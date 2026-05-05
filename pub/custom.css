@@ -67,9 +67,15 @@
     z-index: 2;
 }
 
+li {
+  line-height: 1.6;
+}
+
 .pm-ref {
-  cursor: pointer;
+  font-size: 0.75em;
   position: relative;
+  top: -0.3em;   /* tweak this value */
+  line-height: 1;
 }
 
 #pm-ref-popup {
