@@ -1,3 +1,14 @@
+@media (max-width: 585px) {
+    div#wikitext .quoteright, div#wikitext .acaptionright {
+        clear:both;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: calc(100% - 14px)!important
+    }
+}
+
+
 .pmwiki-folder {
   margin: 8px 0;
   border: 1px solid #444;
