@@ -29,6 +29,7 @@ A lightweight, PHP-based wiki, forked from PmWiki.
 http://cyllchuesnconii.rf.gd/
 
 ### Development blog
+* v26.5.7 : [Fixing a small, yet annoying, visual bug](https://rtnf.substack.com/p/ctify_-v2657) 
 * v26.5.5 : [Inline citations](https://rtnf.substack.com/p/ctify_-v2655)
 
 ### Gallery
