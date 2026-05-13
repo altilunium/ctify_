@@ -1,4 +1,5 @@
 <?php if (!defined('PmWiki')) exit();
+include_once("scripts/xlpage-utf-8.php");
 $WikiTitle = "ctify";
 $PageLogoUrl = "https://pbs.twimg.com/profile_images/1716831335724326912/8ujZJHcJ_400x400.jpg";
 
