@@ -43,6 +43,24 @@ Markup('folder-close', 'directives',
     }
 );
 
+Markup('f-open', 'directives',
+    '/\\[\\[f:(.*?)\\]\\]/i',
+    function($m) {
+        $title = htmlspecialchars(trim($m[1]), ENT_QUOTES);
+        return Keep("<details class='tvt-folder'>\n<summary><span class='folder-icon'>&#128193;</span> {$title}</summary>\n<div class='folder-content'>\n");
+    }
+);
+
+// Define the [[/folder]] closing tag
+Markup('f-close', 'directives',
+    '/\\[\\[\/f\\]\\]/i',
+    function($m) {
+        return Keep("\n</div>\n</details>");
+    }
+);
+
+
+
 Markup('quoteright', 'inline',
   '/\[\[quoteright:(\d+):([^\]]+)\]\]/',
   function($m) {
