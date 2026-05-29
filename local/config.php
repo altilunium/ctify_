@@ -94,3 +94,15 @@ Markup('ref', 'fulltext',
     return "<sup class=\"pm-ref\" data-ref=\"$content\">[$refcount]</sup>";
   }
 );
+
+Markup('r', 'fulltext',
+  '/\\[\\[r\\]\\](.*?)\\[\\[\\/r\\]\\]/is',
+  function($m) {
+    static $refcount = 0;
+    $refcount++;
+
+    //$content = htmlspecialchars($m[1], ENT_QUOTES);
+    $content = $m[1];
+    return "<sup class=\"pm-ref\" data-ref=\"$content\">[$refcount]</sup>";
+  }
+);
