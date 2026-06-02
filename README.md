@@ -29,6 +29,7 @@ A lightweight, PHP-based wiki, forked from PmWiki.
 http://cyllchuesnconii.rf.gd/
 
 ### Development blog
+* v26.6.2 : [Foldered preformatted text block](https://rtnf.substack.com/p/ctify_-v2662)
 * v26.5.29 : [Syntactic sugar : ref](https://rtnf.substack.com/p/ctify_-v26529)
 * v26.5.27 : [Syntactic sugar : folder](https://rtnf.substack.com/p/ctify_-v26527)
 * v26.5.13 : [今回は日本語で何かを書いてみたい。](https://rtnf.substack.com/p/ctify-v26513)
