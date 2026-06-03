@@ -59,19 +59,24 @@ Markup('f-close', 'directives',
     }
 );
 
-Markup('g-open', 'directives',
-    '/\\[\\[g:(.*?)\\]\\]/i',
+Markup('g-folder', 'fulltext',
+    '/\\[\\[g:(.*?)\\]\\](.*?)\\[\\[\/g\\]\\]/is',
     function($m) {
         $title = htmlspecialchars(trim($m[1]), ENT_QUOTES);
-        return Keep("<details class='tvt-folder'>\n<summary><span class='folder-icon'>&#128193;</span> {$title}</summary>\n<div class='folder-content'>\n<pre class='escaped'>");
-    }
-);
 
-// Define the [[/folder]] closing tag
-Markup('g-close', 'directives',
-    '/\\[\\[\/g\\]\\]/i',
-    function($m) {
-        return Keep("</pre>\n</div>\n</details>");
+        $raw_content = str_replace(array('<:vspace>', '<:block>'), "", $m[2]);
+
+        // Escape content like [@ @] does
+        $content = htmlspecialchars(trim($raw_content), ENT_NOQUOTES);
+
+        return Keep(
+            "<details class='tvt-folder'>" .
+            "<summary><span class='folder-icon'>&#128193;</span> {$title}</summary>" .
+            "<div class='folder-content'>" .
+            "<pre class='escaped'>{$content}</pre>" .
+            "</div>" .
+            "</details>"
+        );
     }
 );
 
