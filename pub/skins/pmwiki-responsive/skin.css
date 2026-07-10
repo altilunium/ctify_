@@ -17,6 +17,7 @@
 ***********************************************************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
 
 @media (max-width: 585px) {
   .quoteright{
@@ -120,7 +121,7 @@ a {
 border: 0px;
 overflow: hidden;
 resize: none;	
-font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans', 'Noto Color Emoji', sans-serif;
 color: #1A1A1B;
 font-size: 14px;
 line-height: 21px;
